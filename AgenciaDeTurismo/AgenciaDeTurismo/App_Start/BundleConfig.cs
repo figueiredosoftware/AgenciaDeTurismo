@@ -24,7 +24,10 @@ namespace AgenciaDeTurismo
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/estilos.css"));
+
+            BundleTable.EnableOptimizations = true; //serve para minificar o código antes de publicar mesmo em desenvolvimento
         }
     }
 }
