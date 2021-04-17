@@ -89,3 +89,4 @@ C:\Alessandro\Projetos\Projetos Versionados\AgenciaDeTurismo\AgenciaDeTurismo\Ag
 C:\Alessandro\Projetos\Projetos Versionados\AgenciaDeTurismo\AgenciaDeTurismo\AgenciaDeTurismo\obj\Debug\AgenciaDeTurismo.csproj.CopyComplete
 C:\Alessandro\Projetos\Projetos Versionados\AgenciaDeTurismo\AgenciaDeTurismo\AgenciaDeTurismo\obj\Debug\AgenciaDeTurismo.dll
 C:\Alessandro\Projetos\Projetos Versionados\AgenciaDeTurismo\AgenciaDeTurismo\AgenciaDeTurismo\obj\Debug\AgenciaDeTurismo.pdb
+C:\Alessandro\Projetos\Projetos Versionados\AgenciaDeTurismo\AgenciaDeTurismo\AgenciaDeTurismo\obj\Debug\AgenciaDeTurismo.csprojAssemblyReference.cache
