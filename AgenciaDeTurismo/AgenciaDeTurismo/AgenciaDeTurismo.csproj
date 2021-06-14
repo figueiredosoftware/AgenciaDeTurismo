@@ -193,6 +193,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\ViagensOnLine\Inicio.cshtml" />
     <Content Include="Views\Admin\DestinoNovo.cshtml" />
+    <Content Include="Views\Admin\DestinoListagem.cshtml" />
+    <Content Include="Views\Admin\DestinoAlterar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagens\" />
