@@ -85,6 +85,43 @@ namespace AgenciaDeTurismo.Controllers
             return RedirectToAction(ActionDestinoListagem);
         }
 
+        //Alterar Destino POST
+        [HttpPost]
+        public ActionResult DestinoAlterar(Destino destino)
+        {
+            //Se o modelo é válido
+            if (ModelState.IsValid)
+            {
+                using (var db = ObterDbContext())
+                {
+                    //Obtem o original
+                    var destinoOriginal = db.Destinos.Find(destino.DestinoId);
+
+                    //Se encontrou
+                    if(destinoOriginal != null)
+                    {
+                        //Altera o original
+                        destinoOriginal.Nome = destino.Nome;
+                        destinoOriginal.Cidade = destino.Cidade;
+                        destinoOriginal.Pais = destino.Pais;
+
+                        //Altera a imagem apenas se enviou outra
+                        if(Request.Files.Count > 0 && Request.Files[0].ContentLength > 0)
+                        {
+                            destinoOriginal.Foto = GravarFoto(Request);
+                        }
+
+                        //Grava
+                        db.SaveChanges();
+                        return RedirectToAction(ActionDestinoListagem);
+                    }
+                }
+            }
+            //se chegou até aqui e não foi redirecionado é porque houve algum problema
+            return View(destino);
+        }
+
+
         //Gravar Foto
         private string GravarFoto(HttpRequestBase Request)
         {
